@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "f:/XPSC Codes/Week 3/Day 2",
-      "program": "f:/XPSC Codes/Week 3/Day 2/build/Debug/outDebug",
+      "cwd": "f:/XPSC CODES/Week 3/Day 2",
+      "program": "f:/XPSC CODES/Week 3/Day 2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
