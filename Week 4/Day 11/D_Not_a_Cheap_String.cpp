@@ -8,6 +8,7 @@ void solve()
     ll x;
     cin >> x;
     ll sum = 0;
+    string a="";
     vector<pair<int , int>> p;
     for (int i = 0; i < s.size(); i++)
     {
@@ -39,12 +40,12 @@ void solve()
             flag=false;
             cout<<s[i];
         }
-
        }
        if(flag)
        {
-        cout<<" "<<endl;
+        cout<<a<<endl;
        }
+       else cout<<endl;
     }
     
 }
