@@ -16,36 +16,13 @@ void solve()
 {
     int n;
     cin >> n;
-    ll x[n];
+    int x[n];
     for (int i = 0; i < n; i++)
         cin >> x[i];
-    bool a = false;
-    ll ans = 0;
-    ll pic;
-    for (int i = 0; i < n; i++)
+    int ans = x[0];
+    for (int i = 1; i < n; i++)
     {
-        a = false;
-        pic = x[i];
-
-        for (int j = 0; j < n - 1; j++)
-        {
-
-            if (x[j] % pic == 0 && x[j + 1] % pic == 0)
-            {
-                a = true;
-                break;
-            }
-            else if (x[j] % pic != 0 && x[j + 1] % pic != 0)
-            {
-                a = true;
-                break;
-            }
-        }
-        if (!a)
-        {
-            ans = pic;
-            break;
-        }
+        ans = ans & x[i];
     }
     cout << ans << endl;
 }
