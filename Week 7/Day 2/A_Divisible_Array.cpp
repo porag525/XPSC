@@ -12,13 +12,23 @@ __________________________
 #define se second
 #define f front
 using namespace std;
-ll mod=1e9 +7;
 void solve()
 {
-    int n,k;cin>>n>>k;
-    ll ans=1;
-    for(int i=0;i<k;i++) ans=(ans*n)%mod;
-    cout<<ans<<endl;
+    int n;cin>>n;
+    vector<int>x;
+    int sum=0;
+   int i=2;
+   while (n--)
+   {
+      x.push_back(i);
+      i+=2;
+   }
+   for(auto u:x) cout<<u<<" ";
+   cout<<endl;
+   
+
+
+
 }
 int main()
 {
