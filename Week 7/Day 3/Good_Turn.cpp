@@ -14,17 +14,9 @@ __________________________
 using namespace std;
 void solve()
 {
-    int n;cin>>n;
-    vector<int>x;
-    int sum=0;
-   int i=2;
-   while (n--)
-   {
-      x.push_back(i);
-      i+=2;
-   }
-   for(auto u:x) cout<<u<<" ";
-   cout<<endl;
+    int a,b;cin>>a>>b;
+    if(a+b>6) cout<<"YES"<<endl;
+    else cout<<"NO"<<endl;
 }
 int main()
 {

@@ -12,30 +12,20 @@ __________________________
 #define se second
 #define f front
 using namespace std;
-void solve()
-{
-    int n;cin>>n;
-    vector<int>x;
-    int sum=0;
-   int i=2;
-   while (n--)
-   {
-      x.push_back(i);
-      i+=2;
-   }
-   for(auto u:x) cout<<u<<" ";
-   cout<<endl;
-}
 int main()
 {
 
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    int tst;
-    cin >> tst;
-    while (tst--)
-    {
-        solve();
+    int n, j = 0;
+    cin >> n;
+    char ch[] = {'a', 'a', 'b', 'b'};
+    for (int i = 0; i < n; i++) {
+        cout << ch[j];
+        j++;
+
+        if (j == 4) j = 0;
     }
+    cout << endl;
 return 0;
 }

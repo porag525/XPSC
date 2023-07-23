@@ -14,17 +14,14 @@ __________________________
 using namespace std;
 void solve()
 {
-    int n;cin>>n;
-    vector<int>x;
-    int sum=0;
-   int i=2;
-   while (n--)
-   {
-      x.push_back(i);
-      i+=2;
-   }
-   for(auto u:x) cout<<u<<" ";
-   cout<<endl;
+    int n,x;cin>>n>>x;
+    vector<int>mark(n);
+    for(int i=0;i<n;i++) cin>>mark[i];
+    sort(mark.rbegin(),mark.rend());
+    int low=mark[x-1];
+    cout<<low-1<<endl;
+
+    
 }
 int main()
 {
