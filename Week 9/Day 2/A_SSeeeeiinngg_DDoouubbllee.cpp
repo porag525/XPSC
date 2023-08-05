@@ -12,32 +12,28 @@ __________________________
 #define se second
 #define f front
 using namespace std;
-const int N = 1e5 + 5;
-long long arr[N];
+void solve()
+{
+    string s;
+    cin>>s;
+  //  cout<<s<<endl;
+    string x=s;
+    reverse(x.begin(),x.end());
+   // cout<<x<<endl;
+    string ans=s+x;
+    cout<<ans<<endl;
+
+}
 int main()
 {
 
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    int n;
-    cin >> n;
-
-    map<int, ll> x; 
-    for (int i = 0; i < n; i++)
+    int tst;
+    cin >> tst;
+    while (tst--)
     {
-        ll a, b;
-        cin >> a >> b;
-        x[a]++;
-        x[b + 1]--;
+        solve();
     }
-    ll sum = 0, ans = 0;
-    for (auto u : x)
-    {
-        ll value=u.second;
-        sum += value;
-        ans=max(ans,sum);
-    }
-    cout<<ans<<endl;
-
-    return 0;
+return 0;
 }
