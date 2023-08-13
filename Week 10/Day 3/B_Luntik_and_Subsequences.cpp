@@ -14,21 +14,20 @@ __________________________
 using namespace std;
 void solve()
 {
-    // ll n;
-    // cin >> n;
-    // if (n % 2)
-    // {  // Phitron 
-    //     ll l = n / 2;
-    //     ll r = l + 1;
-    //     assert(n == l + r);
-    //     cout << l << " " << r << "\n";
-    //     return;
-    // }
-    // cout << -(n - 1) << " " << n << "\n";
-    // Tourist:
-    long long n;
+    int n;
     cin >> n;
-    cout << -(n - 1) << " " << n << '\n';
+    int a[n];
+    int one = 0, zero = 0;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a[i];
+        if (a[i] == 1)
+            one++;
+        else if (a[i] == 0)
+            zero++;
+    }
+    ll ans = (1ll << zero) * one;
+    cout << ans << "\n";
 }
 int main()
 {

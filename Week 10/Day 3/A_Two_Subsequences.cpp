@@ -14,21 +14,26 @@ __________________________
 using namespace std;
 void solve()
 {
-    // ll n;
-    // cin >> n;
-    // if (n % 2)
-    // {  // Phitron 
-    //     ll l = n / 2;
-    //     ll r = l + 1;
-    //     assert(n == l + r);
-    //     cout << l << " " << r << "\n";
-    //     return;
-    // }
-    // cout << -(n - 1) << " " << n << "\n";
-    // Tourist:
-    long long n;
-    cin >> n;
-    cout << -(n - 1) << " " << n << '\n';
+    string s;
+    cin>>s;
+    char a=s[0];
+    int idx=0;
+    for(int i=1;i<s.size();i++)
+    {
+        if(s[i]<a)
+        {
+            a=s[i];
+            idx=i;
+            
+        }
+    }
+    cout<<a<<" ";
+    for(int i=0;i<s.size();i++)
+    {
+        if(i!=idx) cout<<s[i];
+    }
+    cout<<endl;
+
 }
 int main()
 {
@@ -41,5 +46,5 @@ int main()
     {
         solve();
     }
-    return 0;
+return 0;
 }
