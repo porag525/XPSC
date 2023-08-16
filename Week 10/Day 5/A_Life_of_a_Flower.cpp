@@ -22,8 +22,9 @@ void solve()
         cin >> x[i];
     }
     int count = 1;
-    int pre;
-    for (int i = 0; i < n; i++)
+    int pre=x[0];
+    if(x[0]==1)count++;
+    for (int i = 1; i < n; i++)
     {
         pre = x[i - 1];
         if (x[i] == 0)
